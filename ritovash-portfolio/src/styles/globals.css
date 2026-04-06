@@ -35,6 +35,26 @@ img {
 }
 
 ::selection {
-  background: rgba(251, 191, 36, 0.25);
-  color: #fff;
+  background: rgba(56, 189, 248, 0.28);
+  color: #0f172a;
+}
+
+@keyframes floatUpDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes glowPulse {
+  0%, 100% {
+    opacity: 0.75;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
 }
