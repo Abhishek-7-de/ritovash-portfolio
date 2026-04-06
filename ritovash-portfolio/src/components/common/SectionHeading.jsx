@@ -2,13 +2,13 @@ export default function SectionHeading({ eyebrow, title, description }) {
   return (
     <div className="mb-10">
       {eyebrow && (
-        <p className="text-sm uppercase tracking-[0.24em] text-amber-200/80">{eyebrow}</p>
+        <p className="text-sm uppercase tracking-[0.24em] text-sky-700 font-['Press_Start_2P'] text-xs">{eyebrow}</p>
       )}
-      <h2 className="mt-3 text-3xl font-semibold tracking-tight text-white sm:text-4xl">
+      <h2 className="mt-3 text-3xl font-semibold tracking-tight text-slate-900 sm:text-4xl font-['Press_Start_2P']">
         {title}
       </h2>
       {description && (
-        <p className="mt-4 max-w-2xl text-sm leading-7 text-white/65 sm:text-base">
+        <p className="mt-4 max-w-2xl text-sm leading-7 text-slate-600 sm:text-base">
           {description}
         </p>
       )}

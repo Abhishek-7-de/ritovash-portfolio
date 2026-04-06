@@ -9,11 +9,11 @@ const navItems = [
 
 export default function Navbar() {
   return (
-    <header className="sticky top-0 z-50 border-b border-white/10 bg-black/40 backdrop-blur-xl">
+    <header className="sticky top-0 z-50 border-b border-slate-300/40 bg-white/95 backdrop-blur-xl shadow-sm shadow-slate-300/20">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
         <div>
-          <p className="text-xs uppercase tracking-[0.2em] text-white/45">Portfolio</p>
-          <h1 className="text-lg font-semibold text-white">{personal.name}</h1>
+          <p className="text-xs uppercase tracking-[0.2em] text-slate-600 font-['Press_Start_2P']">Portfolio</p>
+          <h1 className="text-lg font-semibold text-slate-900 font-['Press_Start_2P']">{personal.name}</h1>
         </div>
 
         <nav className="hidden items-center gap-6 md:flex">
@@ -21,7 +21,7 @@ export default function Navbar() {
             <a
               key={item.label}
               href={item.href}
-              className="text-sm text-white/65 transition hover:text-white"
+              className="text-sm text-slate-700 transition hover:text-slate-900 font-['Press_Start_2P'] text-xs"
             >
               {item.label}
             </a>

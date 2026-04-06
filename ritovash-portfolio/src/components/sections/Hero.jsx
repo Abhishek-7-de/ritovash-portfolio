@@ -10,22 +10,22 @@ export default function Hero() {
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        className="space-y-8"
+        className="space-y-8 rounded-[32px] border border-slate-300/60 bg-white/90 p-8 shadow-lg shadow-slate-400/20"
       >
         <div className="flex flex-wrap gap-3">
-          <span className="rounded-full border border-amber-400/30 bg-amber-400/10 px-4 py-1 text-sm text-amber-200">
+          <span className="rounded-full border border-sky-500/30 bg-sky-500/10 px-4 py-1 text-xs font-['Press_Start_2P'] text-slate-900">
             Performance Marketing Portfolio
           </span>
-          <span className="rounded-full border border-white/15 bg-white/5 px-4 py-1 text-sm text-white/75">
+          <span className="rounded-full border border-lime-500/30 bg-lime-500/10 px-4 py-1 text-xs font-['Press_Start_2P'] text-slate-900">
             5+ Years Experience
           </span>
         </div>
 
         <div className="space-y-5">
-          <h2 className="max-w-4xl text-4xl font-semibold leading-tight tracking-tight text-white sm:text-5xl lg:text-7xl">
+          <h2 className="max-w-4xl text-4xl font-semibold leading-tight tracking-tight text-black sm:text-5xl lg:text-7xl font-['Press_Start_2P']">
             {personal.subtitle}
           </h2>
-          <p className="max-w-2xl text-base leading-7 text-white/70 sm:text-lg">
+          <p className="max-w-2xl text-base leading-7 text-gray-800 sm:text-lg">
             {personal.description}
           </p>
         </div>
@@ -46,16 +46,20 @@ export default function Hero() {
         transition={{ duration: 0.65, delay: 0.1 }}
         className="relative"
       >
-        <div className="absolute -left-6 top-8 h-24 w-24 rounded-full bg-amber-400/20 blur-3xl" />
-        <div className="absolute -right-4 bottom-8 h-32 w-32 rounded-full bg-sky-400/10 blur-3xl" />
+        <div className="absolute -left-6 top-8 h-24 w-24 rounded-full bg-yellow-400/20 blur-3xl" />
+        <div className="absolute -right-4 bottom-8 h-32 w-32 rounded-full bg-green-400/10 blur-3xl" />
 
-        <div className="overflow-hidden rounded-[32px] border border-white/10 bg-white/5 shadow-glow">
+        <div className="overflow-hidden rounded-[32px] border-4 border-green-500 bg-green-500/5 shadow-glow">
           <img
             src={personal.heroImage}
             alt={personal.name}
             className="h-full max-h-[620px] w-full object-cover"
           />
         </div>
+
+        {/* Mario Pipes */}
+        <div className="absolute bottom-0 left-0 w-8 h-16 bg-green-600 border-2 border-green-800"></div>
+        <div className="absolute bottom-0 right-0 w-8 h-20 bg-green-600 border-2 border-green-800"></div>
       </motion.div>
     </section>
   );

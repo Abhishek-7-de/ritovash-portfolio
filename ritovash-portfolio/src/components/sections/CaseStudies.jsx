@@ -5,7 +5,7 @@ export default function CaseStudies() {
   return (
     <section id="work" className="py-16 md:py-24">
       <SectionHeading
-        eyebrow="Selected Work"
+        eyebrow="Level 2: Work"
         title="Case studies built around outcomes"
         description="Projects covering multi-location growth, paid media execution, and lead generation systems. Numbers included, because feelings are not a reporting framework."
       />
@@ -14,7 +14,7 @@ export default function CaseStudies() {
         {caseStudies.map((item) => (
           <article
             key={item.company}
-            className="overflow-hidden rounded-[30px] border border-white/10 bg-white/[0.04]"
+            className="overflow-hidden rounded-[30px] border-4 border-yellow-500 bg-yellow-500/5"
           >
             <img
               src={item.image}
@@ -22,14 +22,14 @@ export default function CaseStudies() {
               className="h-56 w-full object-cover"
             />
             <div className="p-6">
-              <p className="text-sm text-amber-200/85">{item.role}</p>
-              <h3 className="mt-2 text-2xl font-semibold text-white">{item.company}</h3>
-              <p className="mt-4 text-sm leading-7 text-white/70">{item.summary}</p>
+              <p className="text-sm text-red-600 font-['Press_Start_2P'] text-xs">{item.role}</p>
+              <h3 className="mt-2 text-2xl font-semibold text-black font-['Press_Start_2P']">{item.company}</h3>
+              <p className="mt-4 text-sm leading-7 text-gray-800">{item.summary}</p>
 
               <ul className="mt-6 space-y-3">
                 {item.results.map((result) => (
-                  <li key={result} className="flex items-start gap-3 text-sm leading-6 text-white/80">
-                    <span className="mt-2 h-2 w-2 rounded-full bg-amber-300" />
+                  <li key={result} className="flex items-start gap-3 text-sm leading-6 text-gray-800">
+                    <span className="mt-2 h-2 w-2 rounded-full bg-yellow-400" />
                     <span>{result}</span>
                   </li>
                 ))}

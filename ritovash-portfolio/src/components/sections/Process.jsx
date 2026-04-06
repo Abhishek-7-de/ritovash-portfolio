@@ -14,12 +14,12 @@ export default function Process() {
         {process.map((step, index) => (
           <div
             key={step}
-            className="rounded-[28px] border border-white/10 bg-white/[0.04] p-5"
+            className="rounded-[28px] border border-slate-300 bg-white p-5 shadow-sm shadow-slate-300/10"
           >
-            <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-xl bg-white/10 text-sm font-semibold text-white/85">
+            <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-xl bg-slate-100 text-sm font-semibold text-slate-700">
               {index + 1}
             </div>
-            <p className="text-sm leading-6 text-white/75">{step}</p>
+            <p className="text-sm leading-6 text-slate-600">{step}</p>
           </div>
         ))}
       </div>

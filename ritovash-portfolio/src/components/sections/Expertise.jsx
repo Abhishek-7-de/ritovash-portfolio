@@ -20,13 +20,13 @@ export default function Expertise() {
           return (
             <div
               key={item.title}
-              className="rounded-[28px] border border-white/10 bg-white/[0.04] p-6"
+              className="rounded-[28px] border border-slate-300 bg-white p-6 shadow-sm shadow-slate-300/10"
             >
-              <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-2xl bg-white/8">
-                <Icon className="h-5 w-5 text-white" />
+              <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-2xl bg-sky-100">
+                <Icon className="h-5 w-5 text-sky-600" />
               </div>
-              <h3 className="text-xl font-semibold text-white">{item.title}</h3>
-              <p className="mt-3 text-sm leading-6 text-white/65">{item.description}</p>
+              <h3 className="text-xl font-semibold text-slate-900">{item.title}</h3>
+              <p className="mt-3 text-sm leading-6 text-slate-600">{item.description}</p>
             </div>
           );
         })}
