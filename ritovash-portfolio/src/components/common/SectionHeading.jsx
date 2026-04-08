@@ -1,14 +1,18 @@
 export default function SectionHeading({ eyebrow, title, description }) {
   return (
-    <div className="mb-10">
+    <div className="mb-12 relative">
+      <div className="absolute -top-10 -left-10 h-32 w-32 bg-primary/10 rounded-full blur-3xl -z-10"></div>
       {eyebrow && (
-        <p className="text-sm uppercase tracking-[0.24em] text-sky-700 font-['Press_Start_2P'] text-xs">{eyebrow}</p>
+        <div className="inline-flex items-center gap-3 mb-4">
+          <span className="h-1.5 w-1.5 bg-primary pixel-borders"></span>
+          <p className="text-[10px] uppercase text-primary font-pixel leading-tight pt-1">{eyebrow}</p>
+        </div>
       )}
-      <h2 className="mt-3 text-3xl font-semibold tracking-tight text-slate-900 sm:text-4xl font-['Press_Start_2P'] bg-gradient-to-r from-slate-900 via-sky-700 to-cyan-700 bg-clip-text text-transparent">
+      <h2 className="text-3xl md:text-5xl font-black tracking-tight text-white font-display mb-6">
         {title}
       </h2>
       {description && (
-        <p className="mt-4 max-w-2xl text-sm leading-7 text-slate-600 sm:text-base">
+        <p className="max-w-2xl text-lg leading-relaxed text-gray-400 font-light">
           {description}
         </p>
       )}

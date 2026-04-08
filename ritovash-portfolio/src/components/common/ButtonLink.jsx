@@ -1,10 +1,10 @@
 export default function ButtonLink({ href, children, variant = "primary", target }) {
   const base =
-    "inline-flex items-center justify-center rounded-2xl px-5 py-3 text-sm font-medium transition";
+    "inline-flex items-center justify-center rounded-full px-6 py-3 text-sm font-medium transition-all group";
 
   const styles = {
-    primary: "bg-gradient-to-r from-sky-500 to-cyan-500 text-white shadow-lg shadow-cyan-200/50 hover:from-sky-600 hover:to-cyan-600 border-2 border-sky-600 font-['Press_Start_2P'] text-xs",
-    secondary: "bg-white text-slate-900 border-2 border-slate-300 hover:bg-slate-100 font-['Press_Start_2P'] text-xs",
+    primary: "bg-primary text-white shadow-[0_0_20px_rgba(59,130,246,0.3)] hover:bg-primary/90 hover:scale-105",
+    secondary: "bg-white/5 text-white border border-white/10 hover:bg-white/10",
   };
 
   return (
